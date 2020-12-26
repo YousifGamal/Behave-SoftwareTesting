@@ -1,5 +1,5 @@
 from behave import *
-from numbers import *
+from number import *
 
 @given('A and B')
 def step_impl(context):
