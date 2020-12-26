@@ -19,7 +19,8 @@ def step_impl(context):
 def step_impl(context,result):
     assert (context.result == result)
 #-----------------------------------------------
-def parse_number(text):
+
+def parse_ffloatt(text):
     """
     Convert parsed text into a number.
     :param text: Parsed text, called by :py:meth:`parse.Parser.parse()`.
@@ -27,17 +28,26 @@ def parse_number(text):
     """
     return float(text)
 # -- REGISTER: User-defined type converter (parse_type).
-register_type(Number=parse_number)
+register_type(Ffloat=parse_ffloatt)
 
-@given('A = {a:Number}, B = {b:Number}')
+
+
+
+@given('Int A = {a:d}, B = {b:d}')
+def step_impl(context,a,b):
+    print(a,b)
+    print("dummy")
+    context.num = Numbers(a,b)
+
+@given('Float A = {a:Ffloat}, B = {b:Ffloat}')
 def step_impl(context,a,b):
     context.num = Numbers(a,b)
 
-@when('A divided by B')
+@when('A plus B')
 def step_impl(context):
-    context.result = context.num.divison()
+    context.result = context.num.add()
   
-@then('result = {r:Number}')
+@then('result = {r:Ffloat}')
 def step_impl(context,r):
     assert(context.result == r)
 
