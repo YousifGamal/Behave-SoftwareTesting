@@ -26,6 +26,7 @@ class Numbers():
         
         for i in range(pt2, len(self.b)):
             result.append(self.b[pt2])
+        return result
 
     def divison(self):
         return self.a / self.b

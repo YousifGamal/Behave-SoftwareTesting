@@ -1,34 +1,16 @@
 from behave import *
 from number import *
 
-@given('A = {a:d} and B = {b:d}')
-def step_impl(context,a,b):
-    context.num = Numbers(a,b)
-
-
-@when('A + B')
-def step_impl(context):
-    context.result = context.num.add()
-
-@when('A / B')
-def step_impl(context):
-    context.result = context.num.divison()
-
-
-@then('result is {result:d}')
-def step_impl(context,result):
-    assert (context.result == result)
-#-----------------------------------------------
-
 def parse_ffloatt(text):
 
     return float(text)
 # -- REGISTER: User-defined type converter (parse_type).
 register_type(Ffloat=parse_ffloatt)
 
-
-
-
+@given('A = {a:d} and B = {b:d}')
+def step_impl(context,a,b):
+    context.num = Numbers(a,b)
+    
 @given('Int A = {a:d}, B = {b:d}')
 def step_impl(context,a,b):
     print(a,b)
@@ -38,9 +20,17 @@ def step_impl(context,a,b):
 @given('Float A = {a:Ffloat}, B = {b:Ffloat}')
 def step_impl(context,a,b):
     context.num = Numbers(a,b)
-
-@when('A plus B')
+    
+@given('A and B')
+def step_impl(context):
     context.num = Numbers(1,2)
+
+@given('wir haben "behave" installiert')
+def step_impl(context):
+    context.worked = False
+
+
+
     
 @given('A and B lists')
 def step_impl(context):
@@ -50,16 +40,25 @@ def step_impl(context):
         A.append(int(row["a"]))
         B.append(int(row["b"]))
     context.num = Numbers(A, B)
+
+#-----------------------------------------------    
+
+@when('A + B')
+def step_impl(context):
+    context.result = context.num.add()
+
+@when('A / B')
+def step_impl(context):
+    context.result = context.num.divison()
+
+    
+@when('A plus B')
+def step_impl(context):
+    context.result = context.num.add()
     
 @when('add A and B')
 def step_impl(context):
     context.result = context.num.add()
-  
-@then('result = {r:Ffloat}')
-def step_impl(context,r):
-    assert(context.result == r)
-
-#--------------------------------------------------------
 
 @when('subtract A and B')
 def step_impl(context):
@@ -87,18 +86,24 @@ def step_impl(context):
     context.min = context.result[0]
 
 
-@given('wir haben "behave" installiert')
-def step_impl(context):
-    context.worked = False
-
 @when('wir einen Test implementieren')
 def step_impl(context):
     context.worked = True
 
+# -----------------------------------------------    
+
+
+@then('result is {result:d}')
+def step_impl(context,result):
+    assert (context.result == result)
+
+@then('result = {r:Ffloat}')
+def step_impl(context,r):
+    assert(context.result == r)
+
 @then(u'wird "behave" ihn für uns testen!')
 def step_impl(context):
     assert(context.worked)
-    assert (context.result == 3)
     
 @then('result is A-B')
 def step_impl(context):
