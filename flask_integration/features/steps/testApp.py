@@ -13,7 +13,7 @@ def step_impl(context):
     assert context.browser.current_url == 'http://localhost:7777/helloname/muhammad'
     assert 'hello muhammad' in context.browser.page_source
 
-@given('we have assinged name variable with 9.0')
+@given('we have assigned number variable with 9.0')
 def step_impl(context):
     pass
 

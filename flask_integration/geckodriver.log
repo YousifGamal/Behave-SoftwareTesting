@@ -218,3 +218,119 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught e
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
 JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 123: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
 JavaScript error: resource://gre/modules/IndexedDB.jsm, line 370: UnknownError: IDBDatabase.transaction: Can't start IndexedDB transaction during shutdown
+1609082358591	geckodriver	INFO	Listening on 127.0.0.1:59919
+1609082359471	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexwgZkU"
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFC72F6A410, 4096)
+Sandbox: seccomp sandbox violation: pid 6189, tid 6189, syscall 262, args 32 140250275336958 140722237252624 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFC72F6A310, 4096)
+Sandbox: seccomp sandbox violation: pid 6189, tid 6189, syscall 262, args 32 140250275336958 140722237252368 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFC72F6A310, 4096)
+Sandbox: seccomp sandbox violation: pid 6189, tid 6189, syscall 262, args 32 140250275336958 140722237252368 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFF0BA084E0, 4096)
+Sandbox: seccomp sandbox violation: pid 6217, tid 6217, syscall 262, args 32 140096601424638 140733388457184 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFF0BA083E0, 4096)
+Sandbox: seccomp sandbox violation: pid 6217, tid 6217, syscall 262, args 32 140096601424638 140733388456928 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFF0BA083E0, 4096)
+Sandbox: seccomp sandbox violation: pid 6217, tid 6217, syscall 262, args 32 140096601424638 140733388456928 4096 4096 1.
+1609082366909	Marionette	INFO	Listening on port 38407
+1609082367007	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609082368020	Marionette	INFO	Stopped listening on port 38407
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/SearchService.jsm, line 509: NS_ERROR_FAILURE: SearchService previously failed to initialize
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 123: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+JavaScript error: resource://gre/modules/IndexedDB.jsm, line 370: UnknownError: IDBDatabase.transaction: Can't start IndexedDB transaction during shutdown
+1609082533716	geckodriver	INFO	Listening on 127.0.0.1:60455
+1609082533721	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled75DT5"
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFE7B555F90, 4096)
+Sandbox: seccomp sandbox violation: pid 6729, tid 6729, syscall 262, args 32 139755196470014 140730967613328 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFE7B555E90, 4096)
+Sandbox: seccomp sandbox violation: pid 6729, tid 6729, syscall 262, args 32 139755196470014 140730967613072 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFE7B555E90, 4096)
+Sandbox: seccomp sandbox violation: pid 6729, tid 6729, syscall 262, args 32 139755196470014 140730967613072 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFE505F0F10, 4096)
+Sandbox: seccomp sandbox violation: pid 6750, tid 6750, syscall 262, args 32 140494024237822 140730246827792 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFE505F0E10, 4096)
+Sandbox: seccomp sandbox violation: pid 6750, tid 6750, syscall 262, args 32 140494024237822 140730246827536 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFE505F0E10, 4096)
+Sandbox: seccomp sandbox violation: pid 6750, tid 6750, syscall 262, args 32 140494024237822 140730246827536 4096 4096 1.
+1609082539116	Marionette	INFO	Listening on port 45625
+1609082539136	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609082540276	Marionette	INFO	Stopped listening on port 45625
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/SearchService.jsm, line 509: NS_ERROR_FAILURE: SearchService previously failed to initialize
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 123: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+JavaScript error: resource://gre/modules/IndexedDB.jsm, line 370: UnknownError: IDBDatabase.transaction: Can't start IndexedDB transaction during shutdown
+1609082580738	geckodriver	INFO	Listening on 127.0.0.1:47251
+1609082580743	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFqq35F"
+Sandbox: unsupported fd-relative fstatat(33, "", 0x7FFC71D440F0, 4096)
+Sandbox: seccomp sandbox violation: pid 6975, tid 6975, syscall 262, args 33 140097051263742 140722218221808 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(33, "", 0x7FFC71D43FF0, 4096)
+Sandbox: seccomp sandbox violation: pid 6975, tid 6975, syscall 262, args 33 140097051263742 140722218221552 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(33, "", 0x7FFC71D43FF0, 4096)
+Sandbox: seccomp sandbox violation: pid 6975, tid 6975, syscall 262, args 33 140097051263742 140722218221552 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFFDD36DFD0, 4096)
+Sandbox: seccomp sandbox violation: pid 6996, tid 6996, syscall 262, args 32 140013274284798 140736904749008 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFFDD36DED0, 4096)
+Sandbox: seccomp sandbox violation: pid 6996, tid 6996, syscall 262, args 32 140013274284798 140736904748752 4096 4096 1.
+Sandbox: unsupported fd-relative fstatat(32, "", 0x7FFFDD36DED0, 4096)
+Sandbox: seccomp sandbox violation: pid 6996, tid 6996, syscall 262, args 32 140013274284798 140736904748752 4096 4096 1.
+1609082586228	Marionette	INFO	Listening on port 39361
+1609082586261	Marionette	WARN	TLS certificate errors will be ignored for this session
+1609082586961	Marionette	INFO	Stopped listening on port 39361
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/SearchService.jsm, line 509: NS_ERROR_FAILURE: SearchService previously failed to initialize
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: uncaught exception: 2147500037
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 123: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+JavaScript error: resource://gre/modules/IndexedDB.jsm, line 370: UnknownError: IDBDatabase.transaction: Can't start IndexedDB transaction during shutdown
