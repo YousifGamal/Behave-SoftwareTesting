@@ -1,7 +1,10 @@
-class Numbers():
-    def __init__(self,a,b):
+class Numbers:
+    def __init__(self, a=None, b=None):
         self.a = a
         self.b = b
+        self.divisor = None
+        self.result = None
+        self.numbers = []
 
     def add(self):
         return self.a + self.b
@@ -54,3 +57,24 @@ class Numbers():
     
     def get_total_sum(self):
         return sum(self.a) + sum(self.b)
+    def divisonDecision(self):
+        if self.divisor == "zero":
+            return "skip"
+        else:
+            return "complete"
+
+    def getMax(self):
+        self.result = max(self.numbers)
+
+    def getMin(self):
+        self.result = min(self.numbers)
+
+    def factorial(self):
+        if self.a == 0:
+            self.result = 1
+            return
+        else:
+            result = 1
+            for i in range(self.a):
+                result = result * (i + 1)
+            self.result = result

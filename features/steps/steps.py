@@ -1,9 +1,12 @@
 from behave import *
 from number import *
+from hamcrest import assert_that, equal_to, is_not
 
 def parse_ffloatt(text):
 
     return float(text)
+
+
 # -- REGISTER: User-defined type converter (parse_type).
 register_type(Ffloat=parse_ffloatt)
 
@@ -86,7 +89,8 @@ def step_impl(context):
     context.min = context.result[0]
 
 
-@when('wir einen Test implementieren')
+
+@when("wir einen Test implementieren")
 def step_impl(context):
     context.worked = True
 
@@ -125,3 +129,58 @@ def step_impl(context, sum1):
 @then('minimum number is {min1}')
 def step_impl(context, min1):
     assert(int(min1) == context.result[0])
+
+
+## Natural language
+
+
+@given("the number is ten")
+def step_impl(context):
+    context.num = Numbers()
+
+
+@when("the divisor is {divisor}")
+def check_divisor(context, divisor):
+    context.num.divisor = divisor
+
+
+@then("we {state} the division")
+def complete_or_skip(context, state):
+    assert_that(state, equal_to(context.num.divisonDecision()))
+
+
+## step parameters
+
+
+@given("I have a list of {numbers}")
+def given_list(context, numbers):
+    context.num = Numbers()
+    context.num.numbers = map(int, numbers.split(","))
+
+
+@when("I call max on them")
+def call_max(context):
+    context.num.getMax()
+
+
+@when("I call min on them")
+def call_min(context):
+    context.num.getMin()
+
+
+@then("It should be {result:d}")
+def get_result(context, result):
+    assert_that(result, equal_to(context.num.result))
+
+
+## scenerio outline
+
+
+@given("number {number:d}")
+def init_num(context, number):
+    context.num = Numbers(number)
+
+
+@when("I calculate Factorial")
+def calculate_factorial(context):
+    context.num.factorial()
