@@ -60,9 +60,6 @@ def step_impl(context,var,n):
             print(col)
             if int(row[col]) != -1:
                 graph[i].append(int(row[col]))
-    print(graph[2])
-    print("lollllllllllllllllllllllllllllllllll")
-    print("dummy")
     context.assignemt = assignemt
     context.graph = graph
 @when('check is consistent assignemt')
@@ -102,5 +99,13 @@ def step_imp(context):
     assert(True)
 
 
-
+@given('wir haben "behave" installiert')
+def step_impl(context):
+    context.worked = False
+@when("wir einen Test implementieren")
+def step_impl(context):
+    context.worked = True
+@then(u'wird "behave" ihn für uns testen!')
+def step_impl(context):
+    assert context.worked
 

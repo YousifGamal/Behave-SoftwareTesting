@@ -1,5 +1,5 @@
 Feature: testing back tracking
-Background: Same numbers for two Scenarios
+Background: colors array
 Given colors to use
 |colors|
 |R     |
@@ -108,4 +108,3 @@ Then the solution is
 |G     |
 |R     |
 |B     |
-

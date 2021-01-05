@@ -1,4 +1,3 @@
-
 #checks if current assignment is consistent 
 def consistentAssignment(assignment,graph,var):
     # get neighbours of var in the graph
@@ -8,7 +7,6 @@ def consistentAssignment(assignment,graph,var):
         if assignment[neighbour] != -1 and assignment[neighbour] == assignment[var]:
             return False
     return True
-
 
 #if complete assignemt then problem solved
 def completeAssignmet(assignmet):
@@ -30,7 +28,6 @@ def backtracking(graph, assignment, colors, var):
         assignment[var] = -1
     return False
 
-
 #Backtracking Algorithm
 def initializeBacktracking(n,graph,colors):
     assignment = []
@@ -40,6 +37,3 @@ def initializeBacktracking(n,graph,colors):
         i = i#dummy assignment for the warning
     #start the algorithm
     return backtracking(graph,assignment,colors,0)
-
-
-

@@ -34,9 +34,6 @@ def step_impl(context):
     context.num = Numbers(1, 2)
 
 
-@given('wir haben "behave" installiert')
-def step_impl(context):
-    context.worked = False
 
 
 @given("A and B lists")
@@ -103,9 +100,6 @@ def step_impl(context):
     context.min = context.result[0]
 
 
-@when("wir einen Test implementieren")
-def step_impl(context):
-    context.worked = True
 
 
 # -----------------------------------------------
@@ -121,9 +115,7 @@ def step_impl(context, r):
     assert context.result == r
 
 
-@then(u'wird "behave" ihn für uns testen!')
-def step_impl(context):
-    assert context.worked
+
 
 
 @then("result is A-B")
