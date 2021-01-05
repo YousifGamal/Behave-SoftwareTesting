@@ -1,0 +1,6 @@
+behave --no-capture-stderr features/backtraacking.feature
+tags
+
+behave  --tags=@back features/backtraacking.feature
+
+behave  --tags=@complete,@consistent features/backtraacking.feature
