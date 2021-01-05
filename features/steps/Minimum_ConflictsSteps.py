@@ -6,7 +6,7 @@
 
 from behave import *
 from Minimum_Conflicts import *
-from hamcrest import assert_that, equal_to, is_not
+#from hamcrest import assert_that, equal_to, is_not
 
 
 # @given("number {number:d}")
@@ -36,4 +36,4 @@ def check_solution(context, k):
 def show_result(context, result):
     # PlotGraph(context.graph.graph, context.graph.vertexColors)
     solnFound = True if result == "True" else False
-    assert_that(solnFound, equal_to(context.result))
+    assert(solnFound==context.result)
