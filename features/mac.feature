@@ -1,5 +1,20 @@
 Feature: testing mac algorithm
 
+Scenario: Test removeConflicting function
+    Given 2 nodes and 1 colors:
+    """
+        No solution will exist because
+        there is only one color
+        for two connected nodes
+    """
+    When removing the conflicting colors
+    Then No solution exist
+    
+Scenario: Test arcConsistency function
+    Given 2 nodes and 2 colors but the second has only one available color
+    When applying arc consistency
+    Then node 1 has only one available color
+    
 Scenario: 3 nodes and 2 colors
     Given this graph n = 3, c = 2:
         | n0  | n1 | n2|
@@ -25,6 +40,7 @@ Scenario: 3 nodes and 3 colors
         | 1   |
         | 2   |
         | 3   |
+        
     
     
 Scenario: 4 nodes and 3 colors
